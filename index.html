@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>MediCare Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>MediCare Pharmacy</h1>
+    <p>Your Trusted Online Medicine Store</p>
+</header>
+
+<nav>
+    <a href="./index.html">Home</a>
+    <a href="./medicines.html">Medicines</a>
+    <a href="./bookAppointment.html">Book Appointment</a>
+    <a href="./contact.html">Contact</a>
+</nav>
+
+<div class="cart">
+    <button onclick="viewCart()">View Cart</button>
+    Cart: <span id="cartCount">0</span>
+</div>
+
+<section class="search">
+    <h2>Search Medicines</h2>
+    <input type="text" id="searchBox" placeholder="Search medicine...">
+</section>
+
+<section class="products">
+   <button  class="arrow-btn" onclick="previousCards()">⬅ </button>
+
+    <div class="card">           
+        <h3>Paracetamol</h3>
+        <p>Fever & Pain Relief</p>
+        <div class="price">₹50</div>
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="removefromcart()">Remove from Cart</button>
+    </div>
+
+    <div class="card">       
+        <h3>Crocin</h3>
+        <p>Cold & Fever</p>
+        <div class="price">₹80</div>
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="removefromcart()">Remove from Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Vitamin C</h3>
+        <p>Immunity Booster</p>
+        <div class="price">₹120</div>
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="removefromcart()">Remove from Cart</button>
+    </div>
+
+        <div class="card">
+        <h3>Ibuprofen</h3>
+        <p>Pain and fever</p>
+        <div class="price">₹100</div>
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="removefromcart()">Remove from Cart</button>
+    </div>  
+
+    <div class="card">
+        <h3>Amoxicillin</h3>
+        <p>Antibiotic</p>
+        <div class="price">₹150</div>
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="removefromcart()">Remove from Cart</button>
+    </div>
+
+
+    <button  class="arrow-btn" onclick="nextCards()">➡</button>
+
+</section>
+
+<footer>
+    <p>© 2026 MediCare Pharmacy</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
